@@ -1,5 +1,7 @@
 body {
     background-color: #f5f6fa;
+    text-align: center;
+    max-width: 100%;
   }
 
 .header {
@@ -56,7 +58,7 @@ body {
     background-color: #f5f6fa;
     font-size: 20px;
     width: 130px;
-    height: 360px;
+    height: 290px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 15px;
     z-index: 1;
@@ -80,35 +82,19 @@ body {
 }
 
 /* Second dropdown button */
-.dropbtn2 {
-    font-size: 20px;
-    font-family: inherit;
-    color: #f5f6fa;
-    padding-left: 20px;
-    padding-right: 20px;
-    width:100%;
-    text-decoration: none;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-.dropbtn2:hover {
-    opacity: 0.5;
-}
-
 /* Dropdown content (hidden by default) */
 .dropdown-content2 {
     display: none;
     position: absolute;
     background-color: #f5f6fa;
     font-size: 20px;
-    width: 130px;
+    width: 120px;
     height: 55px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 15px;
     z-index: 1;
     padding: 10px;
-    margin-left: -20px;
+    margin-left: -15px;
 } 
 
 /* Links inside the dropdown */
@@ -125,9 +111,41 @@ body {
 }
 
 /* Show the dropdown menu on hover */
-.dropdown2:hover .dropdown-content2 {
+.dropdown:hover .dropdown-content2 {
     display: block;
 }
+
+/* Third dropdown button */
+/* Dropdown content (hidden by default) */
+.dropdown-content3 {
+    display: none;
+    position: absolute;
+    background-color: #f5f6fa;
+    font-size: 20px;
+    width: 100px;
+    height: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    z-index: 1;
+    padding: 10px;
+    margin-left: -5px;
+} 
+
+/* Links inside the dropdown */
+.dropdown-content3 a {
+    float: none;
+    color: #243e6b;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content3 {
+    display: block;
+}
+
 
 /* Hyperlinks in dropdown */
 .phoneNum {
@@ -161,44 +179,208 @@ body {
     opacity: 0.5;
 }
 
-/* Dog cards */
-.box {
+.greet {
+    margin-top: 125px;
+}
+.meet {
+    margin-top: 250px;
+}
+
+/* My card */
+.myConatiner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.myContainer .myCard {
     position: relative;
     width: 800px;
-    height: 250px;
-    justify-content: center;
-    text-align: center;
-    display: inline-flex;
-    margin-left: 18%; 
+    height: 200px;
+    margin-bottom: 75px;
+    margin-top: 50px;
+    margin-left: 20%;
+    justify-content: flex-start;
+    display: flex;
+    background:linear-gradient(45deg,#242838, #243e6b, #8299c1);
+    align-items: center;
 }
-.dogCard {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
+.myContainer .myCard .me {
+    position: absolute;
+    left: 12.5%;
+    transform: translateX(-50%);
     transition: all 1s ease;
-    background-color: #edeef2;
-    border: 2.5px solid;
-    border-color:#242838;
-    border-radius:15px;
-    margin: 15px;
+}
+.myContainer .myCard .myContent {
+    color: #f5f6fa;  
+    font-family: sans-serif;
+    position: relative;
+    width: 40%;
+    left: 0%;
+    opacity: 0;
+    text-align: left;
+    padding: 20px 20px 20px 40px;
+    transition: all 1s ease;
+
+}
+.myContainer .myCard:hover .myContent {
+    left: 35%;
+    opacity: 1;
+}
+.myContainer .myCard:hover .me {
+    height: 180%;
+    width: 30%;
+}
+
+/* Dog cards */
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.container .card {
+    position: relative;
+    width: 800px;
+    height: 200px;
+    margin-bottom: 75px;
+    display: flex;
+    background:linear-gradient(45deg,#242838, #243e6b, #8299c1);
+    align-items: center;
+}
+.container .card2 {
+    position: relative;
+    width: 800px;
+    max-width: 800px;
+    height: 200px;
+    margin-bottom: 75px;
+    display: flex;
+    background:linear-gradient(45deg,#242838, #243e6b, #8299c1);
+    align-items: center;
+}
+.container .card .sophie {
+    position: absolute;
+    margin-bottom: -50px;
+    left: 80%;
+    transform: translateX(-50%);
+    transition: all 1s ease;
+}
+.container .card .finn {
+    position: relative;
+    margin-bottom: 5px;
+    left: 43%;
+    transform: translateX(-50%);
+    transition: all 1s ease;
+}
+.container .card2 .grace {
+    position: absolute;
+    margin-bottom: 80px;
+    left: 99%;
+    padding-left: 0px;
+    padding-right: 0px;
+    transform: translateX(-50%);
+    transition: all 1s ease;
+}
+.container .card:hover .sophie {
+    height: 250%;
+    width: 50%;
+}
+.container .card:hover .finn {
+    height: 250%;
+    width: 40%;
+}
+.container .card2:hover .grace {
+    height: 120%;
+    width: 70%;
+}
+.container .card .sophieContent {
+    position: relative;
+    width: 40%;
+    left: 35%;
+    opacity: 0;
+    text-align: left;
+    padding-left:  40px;
+    transition: all 1s ease;
+}
+.container .card .finnContent {
+    position: relative;
+    width: 40%;
+    left: 35%;
+    opacity: 0;
+    text-align: left;
+    padding: 20px 20px 20px 40px;
+    transition: all 1s ease;
+}
+.container .card2 .graceContent {
+    position: relative;
+    width: 40%;
+    left: 35%;
+    opacity: 0;
+    text-align: left;
+    padding: 20px 20px 20px 40px;
+    transition: all 1s ease;
+}
+.container .card:hover .sophieContent {
+    left: 0%;
+    opacity: 1;
+}
+.container .card:hover .finnContent {
+    left: 0%;
+    opacity: 1;
+}
+.container .card2:hover .graceContent {
+    left: 0%;
+    opacity: 1;
+}
+.container .card .sophieContent {
+    color: #f5f6fa;  
+    font-family: sans-serif; 
+}
+.container .card .finnContent {
+    color: #f5f6fa;  
+    font-family: sans-serif; 
+}
+.container .card2 .graceContent {
+    color: #f5f6fa;  
+    font-family: sans-serif; 
+}
+
+
+/* Button to bring you to the top of the page */
+.backTool {
+    width: 100px;
+    margin-left: 90%;
+    justify-content: center;
+}
+.backToTop {
+    color: #243e6b;
+    float: none;
+    text-decoration: none;
+    border: none;
+    background-color: rgba(71, 98, 143, 0.05);
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+.arrowIcon:hover>.tooltip {
+    opacity: 1;
+}
+.tooltip {
+    background-color: rgb(230, 232, 241);
+    font-size: 15px;
+    color: #243e6b;
+    padding: 5px;
+    width: 80px;
+    border-radius: 10px;
+    position: relative;
     text-align: center;
-    font-size: 20px;
-    color: #242838;
+    margin-bottom: 2.5px;
+    opacity: 0; 
+    transition: all 0.5s ease;
 }
-.dogCard:hover {
-    transform: rotateY(180deg);
+
+.indexBottom {
+    height: 800px;
 }
-.front {
-    position: absolute;
-    backface-visibility: hidden;
-    width: 100%;
-    height: 100%;
-}
-.back {
-    position: absolute;
-    backface-visibility: hidden;
-    transform: rotateY(180deg);
-    width: 100%;
-    height: 100%;
+.aboutBottom {
+    height: 0px;
 }
