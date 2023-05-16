@@ -259,7 +259,7 @@ body {
 .container .card .sophie {
     position: absolute;
     margin-bottom: -50px;
-    left: 80%;
+    left: 84%;
     transform: translateX(-50%);
     transition: all 1s ease;
 }
@@ -273,7 +273,7 @@ body {
 .container .card2 .grace {
     position: absolute;
     margin-bottom: 90px;
-    left: 90%;
+    left: 92%;
     padding-left: 0px;
     padding-right: 0px;
     transform: translateX(-50%);
