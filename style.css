@@ -193,7 +193,7 @@ body {
     margin-top: 50px;
     margin-left: 30%;
     display: flex;
-    background:linear-gradient(45deg,#242838, #243e6b, #8299c1, #aab6cc);
+    background:linear-gradient(45deg,#242838, #243e6b, #8299c1);
     align-items: center;
 }
 .me {
@@ -235,7 +235,7 @@ body {
     height: 200px;
     margin-bottom: 75px;
     display: flex;
-    background:linear-gradient(45deg,#242838, #243e6b, #8299c1, #aab6cc);
+    background:linear-gradient(45deg,#242838, #243e6b, #8299c1);
     align-items: center;
 }
 .sophie {
